@@ -22,7 +22,7 @@ class Monitor:
             return False
 
     class Task:
-        def __init__(self,store,keyword):
+        def __init__(self, store, keyword):
             if store in Store.storeDict.keys():
                 self.store = Store(store)
                 self.keyword = keyword
@@ -34,8 +34,8 @@ class Monitor:
 if __name__ == '__main__':
     monitor = Monitor()
     tasks = []
-    for k, v in TASKS:
-        tasks.append(monitor.Task(k, v))
+    for t in TASKS:
+        tasks.append(monitor.Task(t.key(), t.value()))
     monitor.add_task(tasks)
     run_schedule(tasks[0])
     #monitor = Monitor(['tdco'])

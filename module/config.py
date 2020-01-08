@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 
-TASKS = {'kith': '+vans,+old,+skool,-black',
-         'cncpts': '+nike,+kyrie,+sponge,-pink'}
+TASKS = [{'kith': '+vans,+old,+skool,-black'},
+         {'cncpts': '+nike,+kyrie,+sponge,-pink'}]
 
 # 请求超时时间（秒）
 REQUEST_TIMEOUT = 15
